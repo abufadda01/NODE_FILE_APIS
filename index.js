@@ -14,7 +14,7 @@ app.use(express.json({ limit: '100mb' }));
 app.use(express.urlencoded({ limit: '100mb', extended: true }))
 
 
-mongoose.connect('mongodb://localhost:27017/fileUploads')
+mongoose.connect('mongodb+srv://laith:Laithfadda123@cluster0.sy1ihfy.mongodb.net/FILES-APIS')
     .then(() => console.log('Connected to MongoDB'))
     .catch((err) => console.error('Error connecting to MongoDB:', err));
 
